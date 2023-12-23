@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
 * {
   margin: 0;
   border: 0;
@@ -5,17 +8,42 @@
 }
 
 body {
-  background-color: #0f0f0f;
+  background-color: rgb(28, 31, 38);
   display: grid;
   place-items: center;
   height: 100vh;
   width: 100vw;
-  color: white;
 }
 
-input {
+.in {
   border: 0;
   background-color: rgba(82, 91, 110, 0.2);
   padding: 1rem;
+  padding-right: 5rem;
   border-radius: 4rem;
+  font: 500 1rem 'Poppins', sans-serif;
+  color: white;
+}
+
+.in:focus {
+  outline: none;
+}
+
+.in::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font: 400 1rem 'Poppins', sans-serif;
+}
+
+.subbu {
+  background-color: rgba(82, 91, 110, 0.2);
+  border: 0;
+  padding: 1rem 2rem;
+  border-radius: 4rem;
+  font: 500 1rem 'Poppins', sans-serif;
+  color: white;
+  cursor: pointer;
+}
+
+.subbu:hover {
+  background-color: rgb(8 126 164);
 }

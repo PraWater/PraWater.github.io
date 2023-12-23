@@ -1,0 +1,23 @@
+.back {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: 0rem 1rem;
+  border: 0;
+
+    background-color: rgba(82, 91, 110, 0.2);
+    border-radius: 10rem;
+    aspect-ratio: 1;
+    cursor: pointer;
+  }
+  
+  .back:hover {
+    background-color: rgb(8 126 164);
+  }
+
+  .back img {
+    width: 1rem;
+    filter: invert();
+  }
