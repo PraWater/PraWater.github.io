@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f0f0f;
+    background-image: url(https://uploads-ssl.webflow.com/6408bea3de5aef58b7e197d4/6438c3059d443cd7a78762eb_stars-bg.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    height: 80vh;
+    width: 80vw;
+    background-color: #1d1c20;
+    border: 0.1rem solid rgba(255,255,255,.08);
+    border-radius: 2.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.box {
+    width: 25%;
+  aspect-ratio: 1;
+  background-image: linear-gradient(#343236,#38343f);
+  border-radius: 32px;
+  position: absolute;
+  box-shadow: 0 20px 25px rgba(0,0,0,.5),inset 0 2px 2px #525154;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.box img {
+    width: 50%;
+    opacity: 0.16;
+}
+
+.boxImg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    filter: blur(10px);
+}
+
+#box1 {
+    top: 23%;
+  left: 15%;
+  transform: rotate(4deg);
+}
+
+#box1 .boxImg {
+    opacity: var(--opacity);
+    filter: blur(calc(var(--blur) * 10px));
+    background-image: url(https://images.unsplash.com/photo-1703344378005-4b9486658f62?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+#box2 .boxImg {
+    opacity: var(--opacity);
+    filter: blur(calc(var(--blur) * 10px));
+    background-image: url(https://images.unsplash.com/photo-1702750722255-93420fcd21f9?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+#box3 .boxImg {
+    opacity: var(--opacity);
+    filter: blur(calc(var(--blur) * 10px));
+    background-image: url(https://uploads-ssl.webflow.com/6408bea3de5aef58b7e197d4/646d1b08a9203b4455bb3d14_streets.png);
+}
+
+#box2 {
+    top: 26%;
+  left: 38%;
+  transform: rotate(-3deg);
+}
+
+#box3 {
+    top: 26%;
+  left: 60%;
+  transform: rotate(6deg);
+}
+
+.wand {
+    width: 5%;
+    height: 100%;
+    background: linear-gradient(90deg, #18161A 0%, #222024 17.19%, #373538 39.06%, #232125 71.35%, #18161A 100%);
+    left: 40%;
+    transform: rotate(-4deg);
+    transform: translateX(-300%);
+    top: 10%;
+    position: relative;
+    border-radius: 1rem 1rem 0rem 0rem;
+    overflow: hidden;
+    /* transition: left 0.1s ease-out, top 0.1s ease-out; */
+}
+
+.tip {
+    background: linear-gradient(90deg, #DBE5F5 0%, #FFF 39.06%, #D8E0EE 100%);
+    top: 0px;
+    width: 100%;
+    height: 25%;
+}
